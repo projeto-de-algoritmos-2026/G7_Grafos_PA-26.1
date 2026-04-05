@@ -1,4 +1,4 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+**!! Atenção: Renomeie o seu repositório para (Grafos1)_(Receitas-inteligentes). !!** 
 
 Temas:
  - Grafos1
@@ -7,12 +7,9 @@ Temas:
  - D&C
  - Greed
  - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
 
-# NomedoProjeto
+
+# Receita Inteligente
 
 **Número da Lista**: X<br>
 **Conteúdo da Disciplina**: XXXXXXXXXX<br>
