@@ -1,7 +1,4 @@
-# feat: modelos Pydantic de receita
-# Modelos de dados para o sistema de receitas inteligentes.
-# Estes modelos complementam o Graph existente em models.py,
-# adicionando representações de Ingredient, Step e Recipe.
+
 
 from pydantic import BaseModel
 
