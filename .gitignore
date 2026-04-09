@@ -3,3 +3,6 @@
 # dependencies
 /src/backend/.venv
 .idea
+node_modules/
+.vscode/
+__pycache__/
