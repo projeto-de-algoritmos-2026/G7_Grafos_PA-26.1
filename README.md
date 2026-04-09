@@ -13,7 +13,7 @@ Temas:
 |Matrícula | Aluno |
 | -- | -- |
 | 232014638  |  Caio Soares de Andrade |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 231011408  |  Guilherme Flyan Araujo |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
