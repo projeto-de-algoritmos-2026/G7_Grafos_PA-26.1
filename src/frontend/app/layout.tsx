@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col w-full text-white">
         <header className="bg-blue-950 flex flex-col justify-center items-center h-[125px] w-full gap-2">
           <h1 className="text-3xl font-bold">TopoChef</h1>
-          <h2>Aprenda ordenação topológica através de receitas!</h2>
+          <h2 className="px-5 text-center" >Aprenda ordenação topológica através de receitas!</h2>
         </header>
         <main className="w-full flex-1 bg-gray-900 flex flex-col justify-center items-center gap-10 py-10">
           {children}
