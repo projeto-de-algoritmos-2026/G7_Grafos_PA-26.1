@@ -42,7 +42,7 @@ export default async function Recipe({ params }: { params: Promise<{ id: string 
                           </p>}>
         <div className="flex flex-col items-center justify-center items-center gap-6">
           <h3 className="text-2xl font-bold">Receita de {recipe?.name}</h3>
-          <div className="mx-10 bg-blue-950 rounded-xl p-10">
+          <div className="mx-5 lg:mx-10 bg-blue-950 rounded-xl p-10">
             <p className="">Foram aplicados diferentes algoritmos de ordenação para testar a combinação que satisfaça a ordem necessária da receita, como a receita foi modelada através de um grafo direcionado acíclico é possível notar que o algoritmo Topological Sort é mais adequado que o Merge Sort e Quick Sort para organizar o passo a passo por ser um algoritmo que lida com precedências!
               <br />
               <br />
@@ -50,8 +50,8 @@ export default async function Recipe({ params }: { params: Promise<{ id: string 
             </p>
           </div>
 
-          <section className="flex gap-10 pt-5">
-            <article className="rounded-xl border-t-[7.5px] border-x-[1px] border-b-[1px] border-green-600 min-h-[400px] min-w-[400px] max-w-[400px] p-4">
+          <section className="flex flex-wrap justify-center items-center lg:flex-row gap-10 px-5 lg:px-0 pt-5">
+            <article className="rounded-xl border-t-[7.5px] border-x-[1px] border-b-[1px] border-green-600 min-h-[400px] max-w-screen lg:min-w-[400px] lg:max-w-[400px] p-4">
               <h4 className="text-xl font-semibold text-center">Topological Sort</h4>
               <ul className="flex flex-col gap-5 mt-5">
                 {dataTopologicalSortSteps.map((id: number) => (
@@ -63,7 +63,7 @@ export default async function Recipe({ params }: { params: Promise<{ id: string 
               </ul>
               
             </article>
-            <article className="rounded-xl border-t-[7.5px] border-x-[1px] border-b-[1px] border-red-600 min-h-[400px] min-w-[400px] max-w-[400px] p-4"> 
+            <article className="rounded-xl border-t-[7.5px] border-x-[1px] border-b-[1px] border-red-600 min-h-[400px] max-w-screen lg:min-w-[400px] lg:max-w-[400px] p-4"> 
               <h4 className="text-xl font-semibold text-center">Merge Sort</h4>
                 <ul className="flex flex-col gap-5 mt-5">
                   {dataMergeSortSteps.map((id: number) => (
@@ -74,7 +74,7 @@ export default async function Recipe({ params }: { params: Promise<{ id: string 
                   ))}
               </ul>
             </article>
-            <article className="rounded-xl border-t-[7.5px] border-x-[1px] border-b-[1px] border-red-600 min-h-[400px] min-w-[400px] max-w-[400px] p-4">
+            <article className="rounded-xl border-t-[7.5px] border-x-[1px] border-b-[1px] border-red-600 min-h-[400px] max-w-screen lg:min-w-[400px] lg:max-w-[400px] p-4">
               <h4 className="text-xl font-semibold text-center">Quick Sort</h4>
               <ul className="flex flex-col gap-5 mt-5">
                 {dataQuickSortSteps.map((id: number) => (

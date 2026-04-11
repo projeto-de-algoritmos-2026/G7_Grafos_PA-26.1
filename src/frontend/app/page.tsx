@@ -47,27 +47,27 @@ export default function Home() {
 
   return (
     <>
-        <section className="w-full flex flex-col justify-center items-center gap-10 px-15">
+        <section className="w-full flex flex-col justify-center items-center gap-10 lg:px-15">
           <h3 className="text-2xl font-bold">Selecione os Ingredientes</h3>
-          <div className=" w-full grid grid-cols-6 gap-20">
+          <ul className=" w-full flex flex-wrap items-center justify-center lg:grid lg:grid-cols-6 gap-5 lg:gap-20">
             {ingredients.map((ingredient) => (
-              <button key={ingredient.id} className={checkIngredientSelected(ingredient.id) ? "w-[150px] h-[100px] bg-blue-950 flex justify-center items-center hover:cursor-pointer scale-[1.1] rounded-xl brightness-150 border border-gray-600" : " w-[150px] h-[100px] bg-blue-950 flex justify-center items-center hover:cursor-pointer hover:scale-[1.1] hover:brightness-150 transition rounded-xl border border-gray-600"} onClick={()=>(toggleIngredient(ingredient.id))} >
+              <li key={ingredient.id} className={checkIngredientSelected(ingredient.id) ? "w-[150px] h-[100px] bg-blue-950 flex justify-center items-center hover:cursor-pointer scale-[1.1] rounded-xl brightness-150 border border-gray-600" : " w-[150px] h-[100px] bg-blue-950 flex justify-center items-center hover:cursor-pointer hover:scale-[1.1] hover:brightness-150 transition rounded-xl border border-gray-600"} onClick={()=>(toggleIngredient(ingredient.id))} >
                 <p>{ingredient.id}</p>
-              </button>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
-        <section className="w-full flex flex-col justify-center items-center px-15">
+        <section className="w-full flex flex-col justify-center items-center px-5 lg:px-15">
           <h2 className="text-2xl font-bold">Receitas Disponíveis</h2>
-          <div className="w-full flex flex-wrap justify-center items-center gap-20 pt-10">
+          <ul className="w-full flex flex-wrap justify-center items-center gap-5 lg:gap-20 pt-10">
             {recipes.map((recipe)=>(
-              <button key={recipe.id} className={recipeIsAvailable(recipe.id, selectedIngredients) ? (checkRecipeSelected(recipe.id) ? "w-[500px] h-[150px] bg-blue-950 flex flex-col justify-center items-center hover:cursor-pointer scale-[1.1] rounded-xl brightness-150 border border-gray-600 gap-5" : " w-[500px] h-[150px] bg-blue-950 flex flex-col justify-center items-center hover:cursor-pointer hover:scale-[1.1] hover:brightness-150 transition rounded-xl border border-gray-600 gap-5") : " w-[500px] h-[150px] bg-blue-950 flex flex-col justify-center items-center hover:cursor-not-allowed opacity-50 rounded-xl border border-gray-600 gap-5"} onClick={()=>(toggleRecipe(recipe.id))}>
+              <li key={recipe.id} className={recipeIsAvailable(recipe.id, selectedIngredients) ? (checkRecipeSelected(recipe.id) ? "w-[500px] h-[200px] lg:h-[150px] bg-blue-950 flex flex-col justify-center items-center hover:cursor-pointer scale-[1.1] rounded-xl brightness-150 border border-gray-600 gap-5 p-10" : " w-[500px] h-[200px] lg:h-[150px] bg-blue-950 flex flex-col justify-center items-center hover:cursor-pointer hover:scale-[1.1] hover:brightness-150 transition rounded-xl border border-gray-600 gap-5 p-10") : " w-[500px] h-[200px] lg:h-[150px] bg-blue-950 flex flex-col justify-center items-center hover:cursor-not-allowed opacity-50 rounded-xl border border-gray-600 gap-5 p-10"} onClick={()=>{if(recipeIsAvailable(recipe.id, selectedIngredients))toggleRecipe(recipe.id)}}>
                 <h3 className="text-xl font-bold">{recipe.name}</h3>
-                <p>{recipe.description}</p>
-              </button>
+                <p className="text-center">{recipe.description}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
         <Link href={`/recipe/${selectedRecipe}`}>
           <button className={selectedRecipe ? "w-[200px] h-[50px] bg-green-600 flex justify-center items-center hover:cursor-pointer hover:scale-[1.1] hover:brightness-150 transition rounded-xl border border-gray-600" : "w-[200px] h-[50px] bg-green-600 flex justify-center items-center hover:cursor-not-allowed opacity-50 rounded-xl border border-gray-600"} disabled={!selectedRecipe}>
