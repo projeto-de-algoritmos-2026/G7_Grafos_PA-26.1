@@ -1,0 +1,398 @@
+{
+    "recipes" : [
+        {
+        "id": "pizza_calabresa",
+        "name": "Pizza de Calabresa",
+        "description": "Pizza clássica brasileira com massa caseira fermentada, molho de tomate, muçarela e calabresa. Forno bem quente é o segredo para uma pizza perfeita.",
+        "ingredients": [
+            { "id": "Farinha", "name": "Farinha de trigo (250g)", "category": "base" },
+            { "id": "Água Morna", "name": "Água morna (150ml)", "category": "base" },
+            { "id": "Fermento", "name": "Fermento biológico seco (1/2 col. sopa)", "category": "base" },
+            { "id": "Açúcar", "name": "Açúcar (1 col. chá)", "category": "base" },
+            { "id": "Sal", "name": "Sal (1 col. chá)", "category": "tempero" },
+            { "id": "Azeite", "name": "Azeite de oliva (1 col. sopa)", "category": "tempero" },
+            { "id": "Molho de Tomate", "name": "Molho de tomate (200ml)", "category": "molho" },
+            { "id": "Muçarela", "name": "Queijo muçarela (200g)", "category": "laticinio" },
+            { "id": "Calabresa", "name": "Linguiça calabresa (150g)", "category": "proteina" },
+            { "id": "Cebola", "name": "Cebola (1/2 unidade)", "category": "vegetal" },
+            { "id": "Orégano", "name": "Orégano", "category": "tempero" }
+        ],
+        "steps": [
+            {
+            "id": 1,
+            "name": "Ativar o fermento na água morna",
+            "description": "Dissolva o fermento biológico e o açúcar na água morna (não quente, ~38°C). Aguarde 5 minutos até espumar — isso confirma que o fermento está ativo.",
+            "dependencies": []
+            },
+            {
+            "id": 2,
+            "name": "Misturar farinha, sal e açúcar",
+            "description": "Em uma tigela grande, misture a farinha de trigo com o sal. Faça um buraco no centro para receber os líquidos.",
+            "dependencies": []
+            },
+            {
+            "id": 3,
+            "name": "Incorporar fermento e azeite à farinha",
+            "description": "Despeje a mistura de fermento ativado e o azeite no centro da farinha. Misture com uma colher até começar a formar uma massa.",
+            "dependencies": [1, 2]
+            },
+            {
+            "id": 4,
+            "name": "Sovar a massa por 10 minutos",
+            "description": "Transfira para uma superfície enfarinhada e sove com as mãos por 10 minutos. A massa deve ficar lisa, elástica e desgrudar das mãos.",
+            "dependencies": [3]
+            },
+            {
+            "id": 5,
+            "name": "Descansar a massa coberta (1 hora)",
+            "description": "Coloque a massa de volta na tigela, cubra com um pano úmido e deixe descansar em local morno por 1 hora ou até dobrar de volume.",
+            "dependencies": [4]
+            },
+            {
+            "id": 6,
+            "name": "Preparar o molho de tomate",
+            "description": "Tempere o molho de tomate com sal, orégano e um fio de azeite. Se preferir, refogue alho picado no azeite antes de adicionar o molho.",
+            "dependencies": []
+            },
+            {
+            "id": 7,
+            "name": "Ralar a muçarela",
+            "description": "Rale a muçarela no ralo grosso. Muçarela ralada derrete mais uniformemente que fatiada.",
+            "dependencies": []
+            },
+            {
+            "id": 8,
+            "name": "Fatiar a calabresa em rodelas",
+            "description": "Corte a linguiça calabresa em rodelas finas (3-4mm). Se preferir mais crocante, frite rapidamente as rodelas em uma frigideira antes.",
+            "dependencies": []
+            },
+            {
+            "id": 9,
+            "name": "Cortar a cebola em rodelas finas",
+            "description": "Corte a cebola em rodelas finas. Ela asará junto com a pizza e ficará macia e adocicada.",
+            "dependencies": []
+            },
+            {
+            "id": 10,
+            "name": "Abrir a massa na forma",
+            "description": "Após o descanso, abra a massa com um rolo sobre superfície enfarinhada até a espessura desejada. Transfira para uma forma de pizza untada com azeite.",
+            "dependencies": [5]
+            },
+            {
+            "id": 11,
+            "name": "Montar a pizza",
+            "description": "Espalhe o molho de tomate sobre a massa, deixando 2cm de borda. Cubra com a muçarela ralada, distribua as rodelas de calabresa e cebola. Finalize com orégano e um fio de azeite.",
+            "dependencies": [10, 6, 7, 8, 9]
+            },
+            {
+            "id": 12,
+            "name": "Pré-aquecer o forno a 250°C",
+            "description": "Ligue o forno na temperatura máxima (220-250°C) pelo menos 15 minutos antes de assar. Se tiver pedra refratária, coloque-a no forno durante o pré-aquecimento.",
+            "dependencies": []
+            },
+            {
+            "id": 13,
+            "name": "Assar a pizza (12-15 minutos)",
+            "description": "Leve a pizza ao forno pré-aquecido e asse por 12-15 minutos, até a borda dourar e o queijo borbulhar. Retire e sirva imediatamente.",
+            "dependencies": [11, 12]
+            }
+        ],
+        "adjacency_list": [
+            [],
+            [3],
+            [3],
+            [4],
+            [5],
+            [10],
+            [11],
+            [11],
+            [11],
+            [11],
+            [11],
+            [13],
+            [13],
+            []
+        ]},
+        {
+        "id": "carbonara",
+        "name": "Carbonara Autêntica",
+        "description": "Pasta alla Carbonara — receita italiana clássica com guanciale, pecorino e ovos. O molho cremoso vem da emulsão entre gordura, ovos e água do cozimento, sem creme de leite.",
+        "ingredients": [
+            { "id": "Espaguete", "name": "Espaguete (500g)", "category": "massa" },
+            { "id": "Guanciale", "name": "Guanciale (200g)", "category": "proteina" },
+            { "id": "Gemas", "name": "Gemas de ovo (4 unidades)", "category": "proteina" },
+            { "id": "Pecorino", "name": "Queijo Pecorino Romano (100g)", "category": "laticinio" },
+            { "id": "Pimenta", "name": "Pimenta-do-reino moída na hora", "category": "tempero" },
+            { "id": "Sal", "name": "Sal grosso", "category": "tempero" },
+            { "id": "Água", "name": "Água (3 litros)", "category": "base" }
+        ],
+        "steps": [
+            {
+            "id": 1,
+            "name": "Cortar o guanciale em tiras",
+            "description": "Corte o guanciale em tiras finas ou cubos pequenos. Não use bacon — o guanciale tem gordura própria que será a base do molho.",
+            "dependencies": []
+            },
+            {
+            "id": 2,
+            "name": "Fritar o guanciale em fogo baixo",
+            "description": "Coloque o guanciale em uma frigideira fria (sem óleo) e leve ao fogo baixo. Deixe a gordura derreter lentamente até o guanciale ficar dourado e crocante (8-10 min).",
+            "dependencies": [1]
+            },
+            {
+            "id": 3,
+            "name": "Retirar guanciale e reservar gordura",
+            "description": "Retire os pedaços crocantes com uma escumadeira e reserve. Mantenha a gordura derretida na frigideira — ela será usada para envolver o espaguete.",
+            "dependencies": [2]
+            },
+            {
+            "id": 4,
+            "name": "Ferver água com sal",
+            "description": "Coloque 3 litros de água em uma panela grande e leve ao fogo alto. Quando ferver, adicione sal grosso (pouco, pois o pecorino já é salgado).",
+            "dependencies": []
+            },
+            {
+            "id": 5,
+            "name": "Cozinhar o espaguete al dente",
+            "description": "Adicione o espaguete na água fervente e cozinhe conforme o tempo da embalagem menos 1 minuto (deve ficar al dente, pois terminará o cozimento na frigideira).",
+            "dependencies": [4]
+            },
+            {
+            "id": 6,
+            "name": "Reservar água do cozimento",
+            "description": "Antes de escorrer, retire 1 xícara (200ml) da água do cozimento do espaguete. Essa água com amido é essencial para criar a emulsão cremosa do molho.",
+            "dependencies": [5]
+            },
+            {
+            "id": 7,
+            "name": "Escorrer o espaguete",
+            "description": "Escorra o espaguete em um escorredor. Não lave com água fria — o amido na superfície ajuda o molho a aderir.",
+            "dependencies": [5]
+            },
+            {
+            "id": 8,
+            "name": "Ralar o pecorino",
+            "description": "Rale finamente o queijo Pecorino Romano. Quanto mais fino, melhor ele derrete e se incorpora ao molho.",
+            "dependencies": []
+            },
+            {
+            "id": 9,
+            "name": "Preparar o molho de gemas",
+            "description": "Em uma tigela, bata as gemas com o pecorino ralado e pimenta-do-reino moída. Misture até obter um creme espesso e homogêneo.",
+            "dependencies": [8]
+            },
+            {
+            "id": 10,
+            "name": "Transferir espaguete para a frigideira",
+            "description": "Coloque o espaguete escorrido na frigideira com a gordura do guanciale. Misture bem em fogo muito baixo por 1 minuto para envolver a massa na gordura.",
+            "dependencies": [7, 3]
+            },
+            {
+            "id": 11,
+            "name": "Criar a emulsão (fogo desligado)",
+            "description": "DESLIGUE O FOGO. Despeje o molho de gemas sobre o espaguete e misture vigorosamente. Adicione a água reservada aos poucos até obter uma textura cremosa. O calor residual cozinha as gemas sem talhar.",
+            "dependencies": [10, 9, 6]
+            },
+            {
+            "id": 12,
+            "name": "Servir imediatamente",
+            "description": "Sirva a carbonara nos pratos com os pedaços de guanciale crocante por cima, mais pecorino ralado e pimenta-do-reino a gosto. Sirva imediatamente — o molho engrossa conforme esfria.",
+            "dependencies": [11, 3]
+            }
+        ],
+        "adjacency_list": [
+            [],
+            [2],
+            [3],
+            [10, 12],
+            [5],
+            [6, 7],
+            [11],
+            [10],
+            [9],
+            [11],
+            [11],
+            [12],
+            []
+        ]},
+        {
+        "id": "hamburguer_artesanal",
+        "name": "Hambúrguer Artesanal",
+        "description": "Hambúrguer com pão caseiro, carne suculenta, queijo derretido e montagem completa com vegetais e molho.",
+        "ingredients": [
+            { "id": "Farinha", "name": "Farinha de trigo (300g)", "category": "base" },
+            { "id": "Água Morna", "name": "Água morna (150ml)", "category": "base" },
+            { "id": "Fermento", "name": "Fermento biológico seco (1 col. sopa)", "category": "base" },
+            { "id": "Açúcar", "name": "Açúcar (1 col. chá)", "category": "base" },
+            { "id": "Sal", "name": "Sal", "category": "tempero" },
+            { "id": "Carne Moída", "name": "Carne moída (400g)", "category": "proteina" },
+            { "id": "Queijo Cheddar", "name": "Queijo cheddar (4 fatias)", "category": "laticinio" },
+            { "id": "Alface", "name": "Folhas de alface", "category": "vegetal" },
+            { "id": "Tomate", "name": "Tomate (1 unidade)", "category": "vegetal" },
+            { "id": "Maionese", "name": "Maionese", "category": "molho" }
+        ],
+        "steps": [
+            {
+            "id": 1,
+            "name": "Ativar fermento",
+            "description": "Misture fermento, açúcar e água morna e deixe espumar.",
+            "dependencies": []
+            },
+            {
+            "id": 2,
+            "name": "Misturar massa",
+            "description": "Misture farinha e sal e incorpore o fermento.",
+            "dependencies": [1]
+            },
+            {
+            "id": 3,
+            "name": "Sovar massa",
+            "description": "Sove até ficar lisa e elástica.",
+            "dependencies": [2]
+            },
+            {
+            "id": 4,
+            "name": "Descansar massa",
+            "description": "Deixe crescer por 1 hora.",
+            "dependencies": [3]
+            },
+            {
+            "id": 5,
+            "name": "Modelar e assar pão",
+            "description": "Modele os pães e asse até dourar.",
+            "dependencies": [4]
+            },
+            {
+            "id": 6,
+            "name": "Temperar carne",
+            "description": "Tempere a carne com sal.",
+            "dependencies": []
+            },
+            {
+            "id": 7,
+            "name": "Modelar hambúrguer",
+            "description": "Forme os discos de carne.",
+            "dependencies": [6]
+            },
+            {
+            "id": 8,
+            "name": "Grelhar carne",
+            "description": "Grelhe até o ponto desejado.",
+            "dependencies": [7]
+            },
+            {
+            "id": 9,
+            "name": "Derreter queijo",
+            "description": "Coloque cheddar sobre a carne quente.",
+            "dependencies": [8]
+            },
+            {
+            "id": 10,
+            "name": "Cortar vegetais",
+            "description": "Lave e corte alface e tomate.",
+            "dependencies": []
+            },
+            {
+            "id": 11,
+            "name": "Preparar molho",
+            "description": "Separe a maionese.",
+            "dependencies": []
+            },
+            {
+            "id": 12,
+            "name": "Montar hambúrguer",
+            "description": "Monte pão, carne, queijo, vegetais e molho.",
+            "dependencies": [5, 9, 10, 11]
+            }
+        ],
+        "adjacency_list": [
+            [],
+            [2],
+            [3],
+            [4],
+            [5],
+            [12],
+            [7],
+            [8],
+            [9],
+            [12],
+            [12],
+            [12],
+            []
+        ]},
+        {
+        "id": "ramen_caseiro",
+        "name": "Ramen Caseiro",
+        "description": "Ramen com caldo rico, carne suína, ovos marinados e montagem final com macarrão e toppings.",
+        "ingredients": [
+            { "id": "Macarrão", "name": "Macarrão para ramen (300g)", "category": "massa" },
+            { "id": "Carne Suína", "name": "Carne suína (300g)", "category": "proteina" },
+            { "id": "Ovos", "name": "Ovos (4 unidades)", "category": "proteina" },
+            { "id": "Shoyu", "name": "Molho shoyu", "category": "molho" },
+            { "id": "Alho", "name": "Alho (2 dentes)", "category": "tempero" },
+            { "id": "Gengibre", "name": "Gengibre", "category": "tempero" },
+            { "id": "Cebolinha", "name": "Cebolinha", "category": "vegetal" }
+        ],
+        "steps": [
+            {
+            "id": 1,
+            "name": "Preparar caldo base",
+            "description": "Ferva água com alho e gengibre.",
+            "dependencies": []
+            },
+            {
+            "id": 2,
+            "name": "Cozinhar carne",
+            "description": "Cozinhe a carne no caldo.",
+            "dependencies": [1]
+            },
+            {
+            "id": 3,
+            "name": "Temperar caldo",
+            "description": "Adicione shoyu ao caldo.",
+            "dependencies": [1]
+            },
+            {
+            "id": 4,
+            "name": "Cozinhar ovos",
+            "description": "Cozinhe os ovos.",
+            "dependencies": []
+            },
+            {
+            "id": 5,
+            "name": "Marinar ovos",
+            "description": "Deixe os ovos no shoyu.",
+            "dependencies": [4]
+            },
+            {
+            "id": 6,
+            "name": "Cozinhar macarrão",
+            "description": "Cozinhe o macarrão separadamente.",
+            "dependencies": []
+            },
+            {
+            "id": 7,
+            "name": "Cortar cebolinha",
+            "description": "Prepare a cebolinha.",
+            "dependencies": []
+            },
+            {
+            "id": 8,
+            "name": "Montar ramen",
+            "description": "Monte com caldo, macarrão, carne, ovos e cebolinha.",
+            "dependencies": [2, 3, 5, 6, 7]
+            }
+        ],
+        "adjacency_list": [
+            [],
+            [2, 3],
+            [8],
+            [8],
+            [5],
+            [8],
+            [8],
+            [8],
+            []
+        ]}
+    ]
+}
