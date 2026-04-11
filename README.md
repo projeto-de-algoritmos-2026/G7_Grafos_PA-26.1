@@ -2,23 +2,18 @@
 
 Temas:
  - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
 
 
 # Receita Inteligente
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 1<br>
+**Conteúdo da Disciplina**: - Grafos1<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 232014638  |  Caio Soares de Andrade |
+| 231011408  |  Guilherme Flyan Araujo |
 
 ## Sobre 
 Descreva os objetivos do seu projeto e como ele funciona. 
