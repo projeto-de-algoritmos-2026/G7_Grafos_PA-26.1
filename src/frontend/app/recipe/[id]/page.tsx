@@ -1,27 +1,28 @@
 import { Suspense } from "react";
 import Link from "next/link";
-import {recipes} from "../../../data/recipes-copy.json";
+import {recipes} from "../../../data/recipes.json";
 
 export default async function Recipe({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const recipe = recipes.find((r: any) => r.id === id);
   const graph = recipe?.adjacency_list;
+  const api_url = "https://g7-grafos-pa-26-1.onrender.com"
   
-  let topologicalSortSteps = await fetch("http://127.0.0.1:8000/topologicalSort", {
+  let topologicalSortSteps = await fetch(`${api_url}/topologicalSort`, {
                                         method: "POST",
                                         headers: {
                                           "Content-Type": "application/json",
                                         },
                                         body: JSON.stringify({ graph }),
                                       });
-  let mergeSortSteps = await fetch("http://127.0.0.1:8000/mergeSort", {
+  let mergeSortSteps = await fetch(`${api_url}/mergeSort`, {
                                   method: "POST",
                                   headers: {
                                     "Content-Type": "application/json",
                                   },
                                   body: JSON.stringify({ graph }),
                                 });
-  let quickSortSteps = await fetch("http://127.0.0.1:8000/quickSort", {
+  let quickSortSteps = await fetch(`${api_url}/quickSort`, {
                                   method: "POST",
                                   headers: {
                                     "Content-Type": "application/json",
@@ -35,7 +36,10 @@ export default async function Recipe({ params }: { params: Promise<{ id: string 
 
   return (
     <>
-      <Suspense fallback={<p>Carregando receita...</p>}>
+      <Suspense fallback={<p>Carregando receita... 
+                            <br /><br />
+                              O servidor hospedado no Render pode demorar até 5 minutos para acordar...
+                          </p>}>
         <div className="flex flex-col items-center justify-center items-center gap-6">
           <h3 className="text-2xl font-bold">Receita de {recipe?.name}</h3>
           <div className="mx-10 bg-blue-950 rounded-xl p-10">
