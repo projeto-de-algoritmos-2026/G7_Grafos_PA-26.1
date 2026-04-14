@@ -41,7 +41,9 @@ Para isso desenvolvemos uma aplicação web hospedada em nuvem, sendo que o fron
 Caso queira rodar localmente o frontend e o backend, altere em `src/frontend/app/recipe/[id]/page.tsx` na variável `api_url` com a URL cujo backend esteja rodando localmente.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Caso for utilizar a versão em nuvem da aplicação hospedada no site já fornecido acima ressaltamos que a API durante as primeiras tentativas pode demorar para responder pois após 15 minutos sem requisições ela hiberna e ao receber uma requisição após hibernação demora cerca de 2~3min para acordar e processar as requisições.
+
+[Link para vídeo de explicação](https://www.youtube.com/watch?v=_za7oErUk0Q&feature=youtu.be)
 
 
 
