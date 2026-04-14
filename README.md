@@ -19,7 +19,10 @@ Temas:
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![Imagem 1](/assets/Captura%20de%20tela%202026-04-13%20213946.png)
+[Imagem 2](/assets/Captura%20de%20tela%202026-04-13%20213957.png)
+[Imagem 3](/assets/Captura%20de%20tela%202026-04-13%20214202.png)
+[Imagem 4](/assets/Captura%20de%20tela%202026-04-13%20214219.png)
 
 ## Instalação 
 **Linguagem**: xxxxxx<br>
