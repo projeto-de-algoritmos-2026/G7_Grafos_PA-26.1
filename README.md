@@ -1,13 +1,9 @@
-**!! Atenção: Renomeie o seu repositório para (Grafos1)_(Receitas-inteligentes). !!** 
-
 Temas:
- - Grafos1
-
+ - Grafos
 
 # Receita Inteligente
 
-**Número da Lista**: 1<br>
-**Conteúdo da Disciplina**: - Grafos1<br>
+**Conteúdo da Disciplina**: - Grafos<br>
 
 ## Alunos
 |Matrícula | Aluno |
@@ -16,18 +12,30 @@ Temas:
 | 231011408  |  Guilherme Flyan Araujo |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O objetivo do TopoChef é exemplificar o uso de grafos direcionados acíclicos e o algoritmo de ordenação topológica em tarefas cotidianas do dia a dia que possuem relação de precedência ou pré requisitos.<br>
+Para isso desenvolvemos uma aplicação web hospedada em nuvem, sendo que o frontend da aplicação está hospedada na Vercel e o backend no Render.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+
+### Frontend
+**Linguagem**: TypeScript<br>
+**Framework**: Next.js<br>
+**Link de Acesso**: [TopoChef](https://g7-grafos-pa-26-1.vercel.app/)<br>
+**Pré-Requisitos**: Node.js v20+<br>
+**Comandos**: Caso queira rodar localmente acesse a pasta src/frontend rode no terminal `npm i` e depois `npm run dev`.
+
+### Backend
+**Linguagem**: Python<br>
+**Framework**: FastAPI<br>
+**Link de Acesso**: [API TopoChef](https://g7-grafos-pa-26-1.onrender.com)<br>
+**Pré-Requisitos**: Python v3.10+<br>
+**Comandos**: Caso queira rodar localmente acesse a pasta src/backend crie um ambiente virtual python no diretório e por fim execute no terminal `pip install -r requirements` e depois `uvicorn main:app --reload` para buildar a API.
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Caso queira rodar localmente o frontend e o backend, altere em `src/frontend/app/recipe/[id]/page.tsx` na variável `api_url` com a URL cujo backend esteja rodando localmente.
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
