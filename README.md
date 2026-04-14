@@ -16,10 +16,10 @@ O objetivo do TopoChef é exemplificar o uso de grafos direcionados acíclicos e
 Para isso desenvolvemos uma aplicação web hospedada em nuvem, sendo que o frontend da aplicação está hospedada na Vercel e o backend no Render.
 
 ## Screenshots
-![Imagem 1](/assets/Captura%20de%20tela%202026-04-13%20213946.png)
-[Imagem 2](/assets/Captura%20de%20tela%202026-04-13%20213957.png)
-[Imagem 3](/assets/Captura%20de%20tela%202026-04-13%20214202.png)
-[Imagem 4](/assets/Captura%20de%20tela%202026-04-13%20214219.png)
+![Imagem 1](/assets/Captura%20de%20tela%202026-04-13%20213946.png)<br>
+![Imagem 2](/assets/Captura%20de%20tela%202026-04-13%20213957.png)<br>
+![Imagem 3](/assets/Captura%20de%20tela%202026-04-13%20214202.png)<br>
+![Imagem 4](/assets/Captura%20de%20tela%202026-04-13%20214219.png)<br>
 
 ## Instalação 
 
